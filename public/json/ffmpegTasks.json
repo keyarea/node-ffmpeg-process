@@ -1,0 +1,16 @@
+{
+  "rtspToRtmp": [
+    {
+      "source": "rtsp://admin:wzl123456@192.168.1.120:554/Streaming/channels/001",
+      "target": "rtmp://192.168.1.123/live/cam2"
+    },
+    {
+      "source": "rtsp://admin:wzl123456@192.168.1.120:554/Streaming/channels/001",
+      "target": "rtmp://192.168.1.123/live/cam3"
+    },
+    {
+      "source": "rtsp://admin:wzl123456@192.168.1.120:554/Streaming/channels/001",
+      "target": "rtmp://192.168.1.123/live/cam4"
+    }
+  ]
+}

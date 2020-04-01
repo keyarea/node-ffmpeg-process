@@ -5,7 +5,7 @@ const options = {
     stdio: 'inherit'
 };
 const {tasks} = require('./taskstatus');
-const {rtspToRtmp} = require('../public/json/ffmpegTasks');
+const {rtspToRtmp} = require('../config/ffmpegTasks');
 
 module.exports = {
     createWorker: function(command) {

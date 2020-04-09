@@ -44,6 +44,6 @@ module.exports = {
         }
     },
     createCMD: function(source, target) {
-        return ['-i', source, '-c:v', 'libx264', '-c:a', 'aac', '-f', 'flv', target];
+        return ['-i', source, '-c:v', 'libx264', '-c:a', 'aac', '-s', '320x240', '-b', '1000k', '-r', '15', '-f', 'flv', target];
     }
 };

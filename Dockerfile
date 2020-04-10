@@ -4,8 +4,15 @@ FROM node:10.15.0-alpine
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 
 # 更新源1
-RUN apk update
-RUN apk add yasm && apk add ffmpeg
+RUN apk update \
+        && apk upgrade \
+        && apk add --no-cache bash \
+        bash-doc \
+        bash-completion \
+        && rm -rf /var/cache/apk/* \
+        && /bin/bash \
+		&& apk add yasm \
+		&& apk add ffmpeg
 
 WORKDIR /usr/src/app
 

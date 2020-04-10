@@ -5,7 +5,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
 
 # 更新源1
 RUN apk update \
-        && apk upgrade \
         && apk add --no-cache bash \
         bash-doc \
         bash-completion \
